@@ -1,0 +1,35 @@
+:root {
+    --color-cyan: #00b7ff
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    text-align: left;
+    direction: rtl;
+}
+
+h2 {
+    text-shadow: 0 0 30px var(--color-cyan);
+    font-size: 1.8rem !important;
+    letter-spacing: 1rem;
+}
+
+.todo {
+    border: 2px solid var(--color-cyan);
+    animation: todo_border 3s infinite;
+}
+
+@keyframes todo_border {
+    0% {
+        border: 2px solid lime;
+    }
+
+    50% {
+        border: 2px solid blueviolet;
+    }
+
+    100% {
+        border: 2px solid blue;
+    }
+}
